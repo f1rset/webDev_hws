@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
     <title>JEZ SALAD</title>
 </head>
 <body>
     <header>
         <img src="images/Logo.png" alt="logo"/>
         <nav class="header-nav">
-            <a href="">Home</a>
+            <a class="active" href="">Home</a>
             <a href="">Menu</a>
             <a href="">About</a>
             <a href="">Contact</a>
@@ -19,7 +20,7 @@
 
     <main>
         <section class="title">
-            <img class = "title-bg" src="images/background.png" alt="background"/>
+            <img class="title-bg" src="images/background.png" alt="background"/>
             <div class="title-text">
                 <h4>
                     #1 Best Healthy Salad
@@ -32,7 +33,7 @@
                 <p>Imagine you don't need a diet because we provide<br>
                     healthy and delicious food for you!</p>
 
-                <button>Order Food</button>
+                <button class="header-sign">Order Food</button>
 
                 <div class="title-ratings">
                     <div>
@@ -55,21 +56,33 @@
                     <img src="images/smile.png" alt="Smile"/>
                     <div>
                         <span>Our Happy customer</span>
-                        <img src="images/star.png" alt="star">
-                        <p>4.9 <span>(1,989 Reviews)</span></p>
+                        <div>
+                            <img src="images/star.png" alt="star">
+                            <p>4.9 <span>(1,989 Reviews)</span></p>
+                        </div>
                     </div>
                 </div>
                 <div class="title-image-stats">
                     <span>Daily Calories</span>
                     <h5>123 Cal</h5>
-                    <img src="images/bars.png" alt="bars"/>
+<!--                    <img src="images/bars.png" alt="bars"/>-->
+                    <div class="container">
+                        <progress value="40" max="100"></progress>
+                        <progress value="60" max="100"></progress>
+                        <progress value="50" max="100"></progress>
+                        <progress value="70" max="100"></progress>
+                        <progress value="55" max="100"></progress>
+                        <progress value="65" max="100"></progress>
+                        <progress value="80" max="100"></progress>
+                        <progress value="90" max="100"></progress>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="diet">
             <header>
                 <h1>WHY CHOOSE US<br>
-                    FOR <span>YOUR HEALTHY FOOD</span></h1>
+                    FOR <span style="color: orange">YOUR HEALTHY FOOD</span></h1>
                 <p>We continue to consistently choose and<br>
                     maintain the quality of the fruit served, so that<br>
                     it remains fresh and nutritious when you eat it.</p>
@@ -82,17 +95,17 @@
                         tersebar di setiap provinsi yang<br>
                         memiliki cabang toko Jez Salad.</p>
                     <button>
-                        <span>Learn more</span><img src="" alt="arrow"/>
+                        <span>Learn more</span><img src="images/arrowbl.png" alt="arrow"/>
                     </button>
                 </div>
-                <div class="diet-card-main">
+                <div class="diet-card diet-card-main">
                     <img src="images/N1_ico.png" alt="icon">
                     <h3>#1 Healthy Fruit Salad</h3>
                     <p>The pioneer of healthy fruit salads that<br>
                         are delicious & suitable for all people<br>
                         with the best quality assurance.</p>
                     <button>
-                        <span>Learn more</span><img src="" alt="arrow"/>
+                        <span>Learn more</span><img src="images/arrow.png" alt="arrow"/>
                     </button>
                 </div>
                 <div class="diet-card">
@@ -102,7 +115,7 @@
                         Food and Beverage sector<br>
                         in Indonesia.</p>
                     <button>
-                        <span>Learn more</span><img src="" alt="arrow"/>
+                        <span>Learn more</span><img src="images/arrowbl.png" alt="arrow"/>
                     </button>
                 </div>
             </main>
@@ -111,7 +124,7 @@
         <section class="reviews">
             <div class="reviews-text">
                 <h2>What Are People<br>
-                    Saying About Us</h2>
+                    Saying <span style="color: orange">About Us</span></h2>
                 <p>We are very happy if you are satisfied with our <br>
                     service and products, let's read pure reviews from<br>
                     customers who bought our products.</p>
@@ -134,6 +147,30 @@
                         because they really take<br>
                         care of the quality.</p>
                 </div>
+<!--                <div class="review-card">-->
+<!--                    <img src="images/review2.png" alt="photo">-->
+<!--                    <h3>David Ken</h3>-->
+<!--                    <span>24 Years</span>-->
+<!--                    <p>The salad is fresh!!! Don't ask<br>-->
+<!--                        about the sauce again, it's<br>-->
+<!--                        really delicious, it's going to<br>-->
+<!--                        be routine. I recommend this<br>-->
+<!--                        salad to all of you guys!<br>-->
+<!--                        because they really take<br>-->
+<!--                        care of the quality.</p>-->
+<!--                </div>-->
+<!--                <div class="review-card">-->
+<!--                    <img src="images/review2.png" alt="photo">-->
+<!--                    <h3>David Ken</h3>-->
+<!--                    <span>24 Years</span>-->
+<!--                    <p>The salad is fresh!!! Don't ask<br>-->
+<!--                        about the sauce again, it's<br>-->
+<!--                        really delicious, it's going to<br>-->
+<!--                        be routine. I recommend this<br>-->
+<!--                        salad to all of you guys!<br>-->
+<!--                        because they really take<br>-->
+<!--                        care of the quality.</p>-->
+<!--                </div>-->
                 <div class="review-card">
                     <img src="images/review2.png" alt="photo">
                     <h3>David Ken</h3>
@@ -163,7 +200,7 @@
         <section class="menu-preview">
             <h5>MENU YANG MEMBUATMU JATUH CINTA</h5>
             <h1>ENJOY THE BEST MENU AND GET<br>
-                <span>DISCOUNTS</span> AVAILABLE</h1>
+                <span style="color: orange">DISCOUNTS</span> AVAILABLE</h1>
             <div class="menu-preview-cards">
                 <div class="menu-preview-card">
                     <img src="images/yummy_salad.png" alt="background">
@@ -216,10 +253,10 @@
         </div>
         <div class="footer-contact">
             <h4>Get in Touch</h4>
-            <img src="images/location_ico.png" alt="icon"><label>8819 Ohio St. South Gate,<br>
-            CA 90280</label>
-            <img src="images/mail_ico.png" alt="icon"><label>Ourstudio@hello.com</label>
-            <img src="images/phone_ico.png" alt="icon"><label>+1 386-688-3295</label>
+            <div><img src="images/location_ico.png" alt="icon"><label>8819 Ohio St. South Gate,<br>
+            CA 90280</label></div>
+            <div><img src="images/mail_ico.png" alt="icon"><label>Ourstudio@hello.com</label></div>
+            <div><img src="images/phone_ico.png" alt="icon"><label>+1 386-688-3295</label></div>
         </div>
         <div class="footer-social">
             <div>
