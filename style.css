@@ -300,9 +300,9 @@ header img{
     height: 70vh;
     width: 24vw;
     margin: auto;
+    border-radius: 70px;
 }
 .menu-preview-card:hover {
-    border-radius: 50px;
     box-shadow: 0 0 70px black;
 }
 .menu-preview-card img{
